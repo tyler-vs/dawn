@@ -1222,6 +1222,28 @@ button.shopify-payment-button__button--unbranded {
   min-height: calc(4.5rem + var(--buttons-border-width) * 2);
 }
 
+.button:hover {
+  animation: tilt-shaking 0.25s linear infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .shopify-payment-button__button--branded {
   z-index: auto;
 }
